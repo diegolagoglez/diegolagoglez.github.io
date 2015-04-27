@@ -1,0 +1,18 @@
+/* Basic reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Main page design */
+html {
+	height: 99%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
