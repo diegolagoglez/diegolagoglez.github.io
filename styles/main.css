@@ -14,5 +14,19 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	font: lighter 80%/1.2em Ubuntu, 'Trebuchet MS', Helvetica, sans-serif;
 }
 
+body h1 {
+	font-size: 3em;
+}
+
+body h1 a {
+	text-decoration: none;
+	color: #45628A;
+}
+
+body h1 a:hover {
+	border-bottom: 1px dotted;
+	color: #5B87C2;
+}
