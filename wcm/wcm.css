@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 100%/1.2em Lato, 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
+}
+
+p, dl, ul, ol {
+    padding: 10px 0;
+}
+
+dl dt, dl dd {
+    padding: 3px 0;
+}
+
+dl dd {
+    margin-left: 20px;
+}
+
+ul, ol {
+    margin-left: 30px;
+}
+
+ul li, ol li {
+    padding: 3px 0;
+}
+
+ul li ul, ul li ol, ol li ul {
+    padding: 0;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.alignleft {
+	text-align: left;
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+.clearleft {
+	clear: left;
+}
+
+.clearright {
+	clear: right;
+}
+
+.clearboth {
+	clear: both;
+}
+
+a {
+	color: #2C8ED4;
+	text-decoration: none;
+}
+
+a.inversed {
+	color: white;
+	border-bottom: 1px dotted white;
+}
+
+a.disabled {
+	color: silver;
+}
+
+a:hover, a.selected:hover {
+	text-decoration: none;
+	background-color: #2798E8;
+	color: white;
+	border-radius: 2px;
+}
+
+a.disabled:hover {
+	background: transparent;
+	color: silver;
+}
+
+a.inversed:hover {
+	color: #2C8ED4;
+	background-color: white;
+}
+
+header {
+    text-align: center;
+    background: #22223F;
+    overflow: auto;
+}
+
+header h1 {
+    margin: 30px 10px;
+    color: white;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 !important;
+    margin: 0 10px !important;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+nav ul li a.selected {
+    border-bottom: 2px solid red;
+}
+
+main {
+    width: 1150px;
+    margin: auto;
+    text-align: center;
+}
+
+main section {
+    text-align: left;
+}
+
+section p {
+    margin: 10px 20px;
+}
+
+section ul, section ol {
+    margin: 10px 20px 10px 60px;
+}
+
+section ul li, section ol li {
+    margin: 10px 0;
+}
+
+section#start {
+    text-align: center;
+}
+
+section#start p {
+    padding: .5em 5em 1.5em 5em;
+}
+
+section p.primary {
+    font-size: 1.8em;
+    color: gray;
+}
+
+section p.secondary {
+    font-size: 1.3em;
+    color: #333333;
+    
+}
+
+section#start p.downloads {
+    margin: 2em;
+}
+
+section p.downloads a {
+    font-size: 2em;
+    padding: 10px 20px;
+    background: #FAFAFA;
+    color: silver;
+    border: 1px solid silver;
+    border-radius: 8px;
+}
+
+section p.downloads a:hover {
+    color: gray;
+    border-color: gray;
+    background: #EAEAEA;
+}
+
+section h2 {
+    padding: 8px 10px;
+    color: white;
+    background: #2A2A45;
+    margin: 0 0 20px 0;
+}
+
+section h3 {
+    margin: 8px 0 8px 10px;
+    border-bottom: 1px solid #2A2A45;
+}
+
+section#faq dl dt {
+    font-size: 1.2em;
+    color: #AAAAAA;
+}
+
+section#faq dl dd {
+    margin: 10px 10px 20px 30px;
+}
+
+footer {
+    color: silver;
+    font-size: .9em;
+    text-align: center;
+    padding: 20px 10px;
+}
