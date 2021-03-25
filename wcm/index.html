@@ -20,7 +20,7 @@
   <nav>
     <ul>
       <li class="start"><a class="selected" href="#start">Inicio</a></li>
-      <li class="working-help"><a href="#working-help">Funcionamiento</a></li>
+      <li class="manual"><a href="#manual">Manual</a></li>
       <li class="faq"><a href="#faq">Preguntas Frecuentes</a></li>
     </ul>
   </nav>
@@ -30,16 +30,23 @@
       El Gestor de Calendarios Laborales es una aplicación diseñada para facilitar la tarea de la planificación de las jornadas en calendarios laborales.
     </p>
 
+    <p class="main-screenshot aligncenter">
+      <img src="./art/main-window-simple-small.png" alt="Captura de pantalla del Gestor de Calendarios Laborales" />
+    </p>
+
     <p class="secondary">
       Esta aplicación ha sido pensada para simplificar la tarea de la negociación de calendarios laborales entre empresa y trabajadores. Además, puede ser usada por los propios trabajadores para calcular su calendario laboral particular, tanto si la jornada es una jornada normal como si, por ejemplo, estos tienen jornada reducida.
     </p>
 
-    <p class="downloads">
-      <a href="https://github.com/diegolagoglez/wcm/releases">Página de descargas</a>
+    <p>
+      <a class="download" href="https://github.com/diegolagoglez/wcm/releases/download/v0.5.0-20210319/wcm-0.5.0-20210319.zip">Descargar Gestor de Calendarios Laborales v0.5.0<span class="download-arrow">🡓</span></a>
+      <span class="os"><br /><br />Windows (AMD64)</span>
+    </p><p>
+      <a href="https://github.com/diegolagoglez/wcm/releases">Descargar otras versiones</a>
     </p>
   </section>
 
-  <section id="working-help">
+  <section id="manual">
     <h2>Ventana principal</h2>
     <p class="aligncenter">
       <img src="./art/main-window.png" alt="Ventana principal" />
@@ -53,14 +60,14 @@
       <li>Un conjunto de estadísticas (izquierda abajo), donde se muestran los cálculos para todas las jornadas utilizadas en el calendario laboral, así como las horas anuales realizadas con esos tipos de jornadas teniendo en cuenta el número de días de vacaciones (especificado en la configuración del <a href="#calendar">calendario</a>). Además, en caso de que un trabajador indique vacaciones efectivas, estas estadísticas también mostrarán las horas reales trabajadas y disfrutadas como vacaciones.</li>
     </ol>
     <p>
-      El funcionamiento general es como sigue:
+      El funcionamiento general es de la siguiente forma:
     </p>
     <ol>
-      <li>Lo primero es <a href="#work-day-types">añadir los tipos de jornadas</a>, laborales o no, que se usarán a lo largo del año. Existen dos tipos de jornadas de forma predeterminada: la jornada no laboral y el fin de semana, jornadas con las que se inicializa el calendario. Estas jornadas no son de trabajo por lo que sus horas de trabajo son cero.</li>
-      <li>Una vez añadidas todas las jornadas, se marca cada día del calendario con la jornada correspondiente. Para ello, basta con seleccionar de la lista de las jornadas la jornada con la que se quieren marcar los días y hacer clic en cada día del calendario con el que se quiera marcar dicha jornada.</li>
+      <li>La primera tarea es <a href="#work-day-types">añadir los tipos de jornadas</a>, laborales o no, que se usarán a lo largo del año. Existen dos tipos de jornadas de forma predeterminada: la jornada no laboral y el fin de semana, jornadas con las que se inicializan todos los calendarios de forma predeterminada. Estas jornadas no son de trabajo por lo que sus horas de trabajo son cero.</li>
+      <li>Una vez añadidas todas las jornadas que se van a necesitar a lo largo del año, se marca cada día del calendario con la jornada correspondiente. Para ello, basta con seleccionar de la lista de las jornadas la jornada con la que se quieren marcar los días y hacer clic en cada día del calendario con el que se quiera marcar dicha jornada (esta tarea se puede acelerar mediante <a href="#mark-range">la opción <em>Marcar Rango</em></a>.</li>
       <li>Según se vayan marcando jornadas laborales, las estadísticas ser irán actualizando con el cálculo de todos los valores.</li>
       <li>Si sobre un día del calendario se hace clic por segunda vez, se marcará con la jornada anterior.</li>
-      <li>Además, cada día cuenta con un menú contextual desde el que también se pueden marcar las jornadas (entre otras cosas):
+      <li>Además, cada día cuenta con un menú contextual desde el que también se pueden marcar las jornadas (entre otras cosas que veremos más adelante):
       <p class="aligncenter"><img src="./art/day-menu.png" alt="Menú contextual para los días del calendario" /></p>
       </li>
     </ol>
@@ -144,7 +151,7 @@
 
     <h2>Otras opciones</h2>
     
-    <h3>Marcado de rangos</h3>
+    <h3 id="mark-range">Marcado de rangos</h3>
     
     <p>Para facilitar la tarea del marcado de jornadas, existe una opción en el menú “Calendario”, submenú “Marcar rango…”, que da la posibilidad de marcar rangos de fechas de diferentes formas:</p>
     
@@ -208,12 +215,19 @@
     <dl>
       <dt>¿Qué licencia tiene la aplicación?</dt>
       <dd>Actualmente la aplicación tiene un uso libre y gratuito pero su código fuente es privado.</dd>
+
       <dt>¿Se publicará alguna vez el código fuente de la aplicación?</dt>
       <dd>Es posible.</dd>
+
+      <dt>¿La aplicación funciona en GNU/Linux?</dt>
+      <dd>Actualmente sólo funciona a través de <a href="https://www.winehq.org/">Wine</a>, pero es probable que en algún momento existan versiones para GNU/Linux.</dd>
+
       <dt>¿Dónde se pueden reportar fallos, sugerencias, etc.?</dt>
       <dd>En la <a href="https://github.com/diegolagoglez/wcm/issues">página de <em>issues</em> del proyecto en GitHub</a>.</dd>
+
       <dt>¿Se puede aplicar a otros países que no sean España?</dt>
-      <dd>La aplicación está pensada para el cálculo de calendarios laborales en España, pero eso no quiere decir que no se pueda adaptar para cualquier otro país y/o cualquier otra legislación. De todas formas, en caso de que alguien quiera utilizarla en otro país y requira alguna característica, puede pedirla a través de la <a href="https://github.com/diegolagoglez/wcm/issues">página de <em>issues</em> del proyecto</a>. Se valorarán todas las propuestas.</dd>
+      <dd>La aplicación está pensada para el cálculo de calendarios laborales en España, pero eso no quiere decir que no se pueda adaptar para cualquier otro país y/o cualquier otra legislación. De todas formas, en caso de que alguien quiera utilizarla en otro país y requiera alguna característica, puede pedirla a través de la <a href="https://github.com/diegolagoglez/wcm/issues">página de <em>issues</em> del proyecto</a>. Se valorarán todas las propuestas.</dd>
+
       <dt>¿Cómo se puede contactar con el autor?</dt>
       <dd>La forma más rápida y sencilla es <a href="https://twitter.com/diegolgz">a través de Twitter</a>.</dd>
     </dl>

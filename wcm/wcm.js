@@ -12,7 +12,7 @@ function modifyURLFragment(fragment) {
 
 function doOnMenuClick(event) {
     event.preventDefault();
-    $("section#start, section#working-help, section#faq").hide();
+    $("section#start, section#manual, section#faq").hide();
     $("nav ul li a").removeClass("selected");
     $(this).addClass("selected");
     let section = $(this).attr("href");
@@ -24,9 +24,9 @@ $(function() {
     $("nav ul li a").click(doOnMenuClick);
     let fragment = getURLFragment();
     if (typeof(fragment) == "undefined" || fragment == "" || fragment == "#start") {
-        $("section#working-help, section#faq").hide();
+        $("section#manual, section#faq").hide();
     } else {
-        $("section#start, section#working-help, section#faq").hide();
+        $("section#start, section#manual, section#faq").hide();
         $("nav ul li a").removeClass("selected");
         $("nav ul li." + fragment + " a").addClass("selected");
         $("section#" + fragment).show();
