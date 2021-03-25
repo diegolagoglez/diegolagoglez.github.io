@@ -20,14 +20,6 @@ dl dd {
     margin-left: 20px;
 }
 
-ul, ol {
-    margin-left: 30px;
-}
-
-ul li, ol li {
-    padding: 3px 0;
-}
-
 ul li ul, ul li ol, ol li ul {
     padding: 0;
 }
@@ -149,15 +141,15 @@ main section {
 }
 
 section p {
-    margin: 10px 20px;
+    margin: 8px 20px;
 }
 
 section ul, section ol {
-    margin: 10px 20px 10px 60px;
+    margin: 5px 20px 10px 60px;
 }
 
 section ul li, section ol li {
-    margin: 10px 0;
+    margin: 7px 0 10px 0;
 }
 
 section#start {
@@ -171,38 +163,62 @@ section#start p {
 section p.primary {
     font-size: 1.8em;
     color: gray;
+    padding-bottom: 15px !important;
+}
+
+section p.main-screenshot {
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 section p.secondary {
     font-size: 1.3em;
     color: #333333;
-    
+    padding-top: 15px !important;
 }
 
 section#start p.downloads {
     margin: 2em;
 }
 
-section p.downloads a {
-    font-size: 2em;
-    padding: 10px 20px;
-    background: #FAFAFA;
-    color: silver;
-    border: 1px solid silver;
+section p a.download {
+    font-size: 1.8em;
+    padding: 15px 20px 15px 40px;
+    background: #333355;
+    color: white;
+    border: #222244;
     border-radius: 8px;
+    box-shadow: 0 1px 3px 2px silver;
 }
 
-section p.downloads a:hover {
-    color: gray;
-    border-color: gray;
-    background: #EAEAEA;
+section p a.download span.download-arrow {
+    margin: 0 0 0 20px;
+    padding: 15px;
+    background: #555588;
+}
+
+section p a.download:hover {
+    color: white;
+    border-color: #333344;
+    background: #444466;
+}
+
+section p a.download:hover span.download-arrow {
+    background: #6666AA;
+}
+
+span.os {
+    color: #9999BB;
+    font-size: .8em;
 }
 
 section h2 {
-    padding: 8px 10px;
+    padding: 10px;
     color: white;
     background: #2A2A45;
     margin: 0 0 20px 0;
+    border-bottom: 3px solid #DD3333;
+    border-radius: 3px;
 }
 
 section h3 {
