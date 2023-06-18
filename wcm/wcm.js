@@ -20,8 +20,23 @@ function doOnMenuClick(event) {
     modifyURLFragment(section);
 }
 
+function closeCookiesAlert(event) {
+    $(this).parent().hide();
+    localStorage.setItem("wcm-cookies-alert-shown", "yes");
+}
+
+function ShowCookiesAlertIfNeeded() {
+    var cookiesAlertShown = localStorage.getItem("wcm-cookies-alert-shown");
+    console.log(cookiesAlertShown);
+    if (cookiesAlertShown == null || cookiesAlertShown == "") {
+        $("div.cookies-alert").show();
+    }
+}
+
 $(function() {
     $("nav ul li a").click(doOnMenuClick);
+    $("div.close").click(closeCookiesAlert);
+    ShowCookiesAlertIfNeeded();
     let fragment = getURLFragment();
     if (typeof(fragment) == "undefined" || fragment == "" || fragment == "#start") {
         $("section#manual, section#faq").hide();
